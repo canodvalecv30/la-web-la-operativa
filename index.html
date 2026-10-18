@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>LA OPERATIVA | CB⁷⁰⁷</title>
+<style>
+:root{color-scheme:dark;--red:#ff1538;--bg:#090909;--card:#151515}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#fff;font-family:Arial,sans-serif}
+header{padding:20px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #292929}
+.logo{font-weight:900;font-size:21px;letter-spacing:2px}
+.logo span{color:var(--red)}
+.badge{border:1px solid var(--red);color:var(--red);padding:8px 12px;border-radius:20px;font-size:11px}
+.hero{text-align:center;padding:85px 20px 65px;background:radial-gradient(ellipse at center,#361016 0%,#090909 65%)}
+.eyebrow{color:var(--red);letter-spacing:5px;font-size:12px}
+h1{font-size:clamp(38px,9vw,76px);line-height:1.05;margin:22px 0;font-weight:900}
+h1 span{color:var(--red)}
+.hero p{color:#aaa;max-width:520px;margin:0 auto 28px;line-height:1.7}
+.btn{display:inline-block;background:var(--red);color:white;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:5px;margin:5px}
+.btn.secondary{background:transparent;border:1px solid #444}
+section{padding:35px 6% 60px;max-width:1050px;margin:auto}
+h2{font-size:25px}
+h2 span{color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid #292929;padding:24px;border-radius:10px}
+.icon{font-size:30px}
+.card h3{margin-bottom:8px}
+.card p{color:#aaa;font-size:14px;line-height:1.6}
+.card a{color:var(--red);text-decoration:none;font-weight:bold;font-size:13px}
+.status{color:#aaa;font-size:13px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#888;margin-right:7px}
+footer{text-align:center;padding:28px 15px;color:#777;border-top:1px solid #252525;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">LA <span>OPERATIVA</span></div>
+  <div class="badge">CB⁷⁰⁷</div>
+</header>
+<main>
+  <div class="hero">
+    <div class="eyebrow">UNIÓN · LEALTAD · RESPETO</div>
+    <h1>LA <span>OPERATIVA</span><br>CB⁷⁰⁷</h1>
+    <p>Bienvenido al centro digital de La Operativa. Accede a nuestros enlaces y al panel de herramientas del proyecto.</p>
+    <a class="btn" href="https://github.com/canodvalecv30/La-operativa-" target="_blank" rel="noopener">VER PROYECTO ↗</a>
+    <a class="btn secondary" href="#panel">EXPLORAR PANEL</a>
+  </div>
+  <section id="panel">
+    <h2>Centro de <span>control</span></h2>
+    <p class="status"><span class="dot"></span>Web disponible · Bot pendiente de conectar</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🔥</div>
+        <h3>La Operativa</h3>
+        <p>Identidad y portal principal del proyecto.</p>
+        <a href="#inicio" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">IR AL INICIO →</a>
+      </article>
+      <article class="card">
+        <div class="icon">🐙</div>
+        <h3>Repositorio</h3>
+        <p>Consulta el código fuente y las actualizaciones en GitHub.</p>
+        <a href="https://github.com/canodvalecv30/La-operativa-" target="_blank" rel="noopener">ABRIR GITHUB →</a>
+      </article>
+      <article class="card">
+        <div class="icon">🤖</div>
+        <h3>Panel del bot</h3>
+        <p>Espacio reservado para conectar el bot cuando configuremos su servidor y sus funciones.</p>
+        <span class="status">Estado: sin conectar</span>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>© <span id="year"></span> LA OPERATIVA · CB⁷⁰⁷</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
